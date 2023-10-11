@@ -10,6 +10,7 @@
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+    position: relative;
 }
 .border-content{
     max-width: 1200px;
@@ -26,32 +27,35 @@ a:hover{
     top: -2px;
 }
 .btn-up{
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    width: 75px;
+    grid-template-columns: 1fr;
+    background: 	rgb(204, 153, 102);
+    align-items: center;
+    justify-items: center;
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 50px;
+    color: gray;
 }
 .caret-up{
-    position: relative;
-    top: 2px;
     display: block;
     width: 20px;
     height: 20px;
+    margin-bottom: 3px;
 }
 .nav-content{
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
-.nav{
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: space-around;
-}
-li{
-    list-style-type: none;
-}
 .footer-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.paragraphs{
+    margin-top: 20px;
 }
