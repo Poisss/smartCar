@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Controller;
+use App\Http\Controllers\InstructionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,5 @@ use App\Http\Controllers\Controller;
 |
 */
 Route::get('/',[Controller::class,'home'])->name('home');
-Route::get('/instructions', function () {
-    return view('instruction.instructions');
-});
+Route::get('/instructions',[InstructionController::class,'instruction'])->name('instructions');
+Route::get('/instructions/user',[InstructionController::class,'user'])->name('user');

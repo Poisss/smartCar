@@ -11,16 +11,17 @@
             <header id="header">
                 <nav class="border-content nav-content">
                     <div class="logo">
-                        <a href="/">
+                        <div>
                             <h2>
                                 Smart Car
                             </h2>
                             <p>
                                 company
                             </p>
-                        </a>
+                        </div>
                     </div>
-
+                    <a href="/" class="info a">О проекте</a>
+                    <a href="/instructions" class="instructions a">Инструкция</a>
                 </nav>
             </header>
             <div class="content">
@@ -34,7 +35,6 @@
                         Проектная работа &copy; 2023 МпК МГТУ им. Г.И Носова
                     </div>
                     <a href="#header" class="btn-up">
-
                         <img src="{{asset('public/img/caret-up-solid.png')}}" alt="caret-up" class="caret-up">
                     </a>
                 </div>

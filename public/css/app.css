@@ -1,10 +1,30 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(22, 8, 47);
+    color: rgb(77, 48, 20);
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: 500;
     box-sizing: border-box;
+}
+header,footer{
+    background: rgb(255, 204, 153,0.7);
+}
+h1{
+    font-size: 36px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 26px;
+    font-weight: 100;
+}
+a{
+    position: relative;
+}
+.a:hover{
+    top: -2px;
 }
 .wrapper{
     display: grid;
@@ -16,15 +36,6 @@
     max-width: 1200px;
     margin: 0 auto;
     padding: 25px 15px;
-}
-header,footer{
-    background: rgb(255, 204, 153,0.7);
-}
-a{
-    position: relative;
-}
-a:hover{
-    top: -2px;
 }
 .btn-up{
     position: fixed;
@@ -49,7 +60,18 @@ a:hover{
 }
 .nav-content{
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 1fr 1fr auto auto 1fr;
+    gap: 10px;
+    grid-template-areas: 'div . info instructions .';
+}
+.info{
+    display: grid;
+    grid-area: info;
+    margin-right: 150px;
+}
+.instructions{
+    display: grid;
+    grid-area: instructions;
 }
 .footer-content{
     display: flex;
@@ -58,4 +80,17 @@ a:hover{
 }
 .paragraphs{
     margin-top: 20px;
+}
+li{
+    color: rgb(204, 153, 102);
+    font-size: 20px;
+}
+.li{
+    color: rgb(77, 48, 20);
+}
+.list-level-one{
+    margin-left: 15px;
+}
+.list-level-two{
+    margin-left: 25px;
 }

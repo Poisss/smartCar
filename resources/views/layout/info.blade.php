@@ -1,5 +1,5 @@
 @extends('layout.layouts')
-@section('title','О нас')
+@section('title','О проекте')
 @section('content')
 <div class="info">
     <h1>Проектная работа</h1>
@@ -11,6 +11,6 @@
         <h2>Цель</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia blanditiis exercitationem voluptatem minus fuga hic, quidem aliquam ad quasi quas eos, nisi odit soluta maiores eveniet et atque incidunt sed.</p>
     </div>
-    <a href="instructions">Список сущностей REST API</a>
+    <a href="instructions" class="a">Список сущностей REST API</a>
 </div>
 @endsection
