@@ -10,16 +10,16 @@
                 <a href="instructions/user#get" class="a li">Get /user</a>
             </li>
             <li>
-                <a href="instructions/user#get" class="a li">Get /user/:id</a>
+                <a href="instructions/user#get-id" class="a li">Get /user/:id</a>
             </li>
             <li>
                 <a href="instructions/user#post" class="a li">Post /user</a>
             </li>
             <li>
-                <a href="instructions/user#put" class="a li">Put /user/:id</a>
+                <a href="instructions/user#put-id" class="a li">Put /user/:id</a>
             </li>
             <li>
-                <a href="instructions/user#delete" class="a li">Delete /user/:id</a>
+                <a href="instructions/user#delete-id" class="a li">Delete /user/:id</a>
             </li>
         </ul>
     </li>

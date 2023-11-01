@@ -26,6 +26,9 @@ a{
 .a:hover{
     top: -2px;
 }
+.bold{
+    font-weight: bold;
+}
 .wrapper{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -84,6 +87,7 @@ a{
 li{
     color: rgb(204, 153, 102);
     font-size: 20px;
+    margin: 5px 0;
 }
 .li{
     color: rgb(77, 48, 20);
@@ -93,4 +97,11 @@ li{
 }
 .list-level-two{
     margin-left: 25px;
+}
+.nav-border{
+    border: 1px solid rgb(128, 128, 128,0.5);
+}
+.table-info{
+    display: grid;
+    grid-template-columns: minmax(200px,auto) minmax(200px,auto);
 }
