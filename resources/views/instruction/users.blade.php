@@ -3,7 +3,7 @@
 @section('content')
 <h1>Пользователи: users</h1>
 <div class="nav-border">
-    <ul class="list-level-two">
+    <ul class="list_level_two">
         <li>
             <a href="#get" class="a li">Get /user</a>
         </li>
@@ -21,7 +21,7 @@
         </li>
     </ul>
 </div>
-<div class="table-info">
+<div class="table_info">
     <p class="bold">
         Ресурс
     </p>

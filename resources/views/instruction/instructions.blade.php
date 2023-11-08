@@ -2,10 +2,10 @@
 @section('title','Инструкция')
 @section('content')
 <h1>Список сущностей REST API</h1>
-<ul class="list-level-one">
+<ul class="list_level_one">
     <li>
         <a href="instructions/user" class="a li">Пользователь:User</a>
-        <ul class="list-level-two">
+        <ul class="list_level_two">
             <li>
                 <a href="instructions/user#get" class="a li">Get /user</a>
             </li>
