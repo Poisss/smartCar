@@ -35,6 +35,9 @@ a{
 .bold{
     font-weight: bold;
 }
+.white{
+    color: white;
+}
 .wrapper{
     display: grid;
     grid-template-rows: auto 1fr auto;
@@ -96,8 +99,22 @@ li{
     background: rgb(244,244,244);
 }
 .play_market-content{
+    display: flex;
+    gap: 70px;
+}
+.play_market-main-src{
+    margin-top: 15px;
+}
+.play_market-main-src-btn{
     display: grid;
-    grid-template-columns: 1fr 400px auto ;
+    grid-template-columns: 30px 1fr;
+    justify-items: center;
+    align-items: center;
+    background: black;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
 }
 .play_market-main-src-btn-img{
     width: 20px;
@@ -106,6 +123,16 @@ li{
 .play_market-qr_code-img{
     width: 100px;
     height: 100px;
+}
+.play_market-img{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+.play_market-img-border{
+    width: 150px;
 }
 .map{
 

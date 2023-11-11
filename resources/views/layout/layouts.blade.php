@@ -35,28 +35,29 @@
                     <div class="border-content play_market-content">
                         <div class="play_market-main">
                             <div class="play_market-main-text">
-                                    <pre>
-<h2>
+                                    <pre><h2>
 Управляй своей машиной прямиком
 в новом приложении
-</h2>
-                                    </pre>
+</h2></pre>
                             </div>
                             <div class="play_market-main-src">
                                 <a href="">
                                     <div class="play_market-main-src-btn">
                                         <div class="play_market-main-src-btn-img">
-                                            <img src="{{asset('public/img/google-play.png')}}" alt="">
+                                            <img src="{{asset('public/img/google-play.png')}}" alt="google-play">
                                         </div>
                                         <div class="play_market-main-src-btn-text">
-                                            <p>Загрузите в</p>
-                                            <p class="bold">Google Play</p>
+                                            <p class="white">Загрузите в</p>
+                                            <p class="bold white">Google Play</p>
                                         </div>
                                     </div>
                                 </a>
                             </div>
                         </div>
                         <div class="play_market-img">
+                            <div class="play_market-img-border">
+                                <img src="{{asset('public/img/phone.png')}}" alt="phone">
+                            </div>
 
                         </div>
                         <div class="play_market-qr_code">
