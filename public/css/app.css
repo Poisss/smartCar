@@ -91,14 +91,15 @@ li{
 }
 /* footer */
 .footer-content{
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
     justify-content: space-between;
 }
 .play_market{
     background: rgb(244,244,244);
 }
-.play_market-content{
+.play_market-content, .footer-nav-grid{
     display: flex;
     gap: 70px;
 }
@@ -135,7 +136,11 @@ li{
     width: 150px;
 }
 .map{
-
+    background: rgb(244,244,244);
+}
+.map-block{
+    width: 100%;
+    height: 400px;
 }
 .nav{
     background: rgb(244,244,244);

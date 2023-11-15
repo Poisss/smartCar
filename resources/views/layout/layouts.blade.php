@@ -6,6 +6,19 @@
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
         <title>Shop | @yield('title','Home')</title>
         <link rel="stylesheet" href="{{asset('public/css/app.css')}}">
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=91a91a1d-c68a-48b0-a7f6-b0670b4b5494&lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript">
+            ymaps.ready(init);
+            function init(){
+                var myMap = new ymaps.Map("map", {
+                    center: [53.397198, 58.983943],
+                    zoom: 17,
+                    zoomRange: {min: 16, max: 19},
+                    controls: ['zoomControl','fullscreenControl'],
+
+                });
+            }
+        </script>
     </head>
     <body>
         <div class="wrapper">
@@ -76,12 +89,15 @@
                 </div>
                 <div class="map">
                     <div class="border-content">
-                        Карта
+                        <div id="map" class="map-block"></div>
                     </div>
                 </div>
                 <div class="nav">
                     <div class="border-content">
-
+                        <div class="footer-nav-grid">
+                            <div>1</div>
+                            <div>2</div>
+                        </div>
                     </div>
                 </div>
                 <div class="about">
