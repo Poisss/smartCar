@@ -57,7 +57,7 @@
                                 <a href="">
                                     <div class="play_market-main-src-btn">
                                         <div class="play_market-main-src-btn-img">
-                                            <img src="{{asset('public/img/google-play.png')}}" alt="google-play">
+                                            <img src="{{asset('public/images/static/google-play.png')}}" alt="google-play">
                                         </div>
                                         <div class="play_market-main-src-btn-text">
                                             <p class="white">Загрузите в</p>
@@ -69,13 +69,13 @@
                         </div>
                         <div class="play_market-img">
                             <div class="play_market-img-border">
-                                <img src="{{asset('public/img/phone.png')}}" alt="phone">
+                                <img src="{{asset('public/images/static/phone.png')}}" alt="phone">
                             </div>
 
                         </div>
                         <div class="play_market-qr_code">
                             <div class="play_market-qr_code-img">
-                                <img src="{{asset('public/img/qr_code.jfif')}}" alt="qr_code" class="qr_code">
+                                <img src="{{asset('public/images/static/qr_code.jfif')}}" alt="qr_code" class="qr_code">
                             </div>
                             <div class="play_market-qr_code-text">
                                 <pre>
