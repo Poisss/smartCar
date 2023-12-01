@@ -1,15 +1,40 @@
 @extends('layout.layouts')
-@section('title','Инструкция пользователя')
+@section('title','Инструкция user')
 @section('content')
-<div class="info">
-    <h1>Проектная работа</h1>
-    <div class="paragraphs">
-        <h2>Введение</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nam cum ducimus! Non expedita commodi eos cumque beatae, id placeat doloribus cupiditate? Dignissimos quisquam dolore quaerat labore doloremque a cupiditate!</p>
+<div class="border-content">
+    <h1>Пользователи: users</h1>
+    <div class="nav-border">
+        <ul class="list_level_two">
+            <li>
+                <a href="#get" class="a li">Get /user</a>
+            </li>
+            <li>
+                <a href="#get-id" class="a li">Get /user/:id</a>
+            </li>
+            <li>
+                <a href="#post" class="a li">Post /user</a>
+            </li>
+            <li>
+                <a href="#put-id" class="a li">Put /user/:id</a>
+            </li>
+            <li>
+                <a href="#delete-id" class="a li">Delete /user/:id</a>
+            </li>
+        </ul>
     </div>
-    <div class="paragraphs">
-        <h2>Цель</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia blanditiis exercitationem voluptatem minus fuga hic, quidem aliquam ad quasi quas eos, nisi odit soluta maiores eveniet et atque incidunt sed.</p>
+    <div class="table_info">
+        <p class="bold">
+            Ресурс
+        </p>
+        <p class="bold">
+            Описание
+        </p>
+        <p>
+            GET /users
+        </p>
+        <p>
+            Получить список пользователей
+        </p>
     </div>
 </div>
 @endsection

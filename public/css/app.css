@@ -1,15 +1,28 @@
 *{
     margin: 0;
     padding: 0;
-    color: rgb(77, 48, 20);
+    color: #213547;
     text-decoration: none;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: 500;
     box-sizing: border-box;
 }
-header,footer{
-    background: rgb(255, 204, 153,0.7);
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+header{
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 2;
+    background: rgb(163, 228, 233)
+}
+hr{
+    opacity: 0.3;
 }
 h1{
     font-size: 36px;
@@ -21,10 +34,24 @@ h2{
     font-weight: 100;
 }
 a{
+    cursor: pointer;
     position: relative;
 }
+.bold{
+    font-weight: bold;
+}
+.white{
+    color: white;
+}
+.margin{
+    margin: 10px 0;
+}
+.paragraph{
+    text-indent: 20px;
+    margin: 10px 0;
+}
 .a:hover{
-    top: -2px;
+    color: red;
 }
 .wrapper{
     display: grid;
@@ -37,46 +64,178 @@ a{
     margin: 0 auto;
     padding: 25px 15px;
 }
-.btn-up{
-    position: fixed;
-    bottom: 28px;
-    right: 28px;
-    display: grid;
-    grid-template-columns: 1fr;
-    background: 	rgb(204, 153, 102);
-    align-items: center;
-    justify-items: center;
-    width: 40px;
-    height: 40px;
+.border-content-height{
+    min-height: 700px;
+}
+.btn-login{
+    padding: 5px 20px;
+    border: 1px solid rgb(244,244,244);
+    border-radius: 20px;
+}
+.btn-login:hover{
+    border: 1px solid rgb(232,232,232);
+}
+.btn-login a{
+    color: rgb(244,244,244);
+}
+.logo{
+    display: block;
+    width: 42px;
+    height: 42px;
     overflow: hidden;
     border-radius: 50px;
-    color: gray;
 }
-.caret-up{
-    display: block;
+.nav-a{
+    color: rgb(244,244,244);
+}
+.nav-a:hover{
+    color: rgb(232,232,232);
+}
+.main{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    background-repeat: no-repeat;
+    background-size: cover ;
+}
+.main-two{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-block{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 50vh;
+    width: 30vw;
+    background-color: rgba(138, 135, 135, 0.5);
+}
+.main-max{
+    height: 100vh;
+}
+.main-min{
+    height: 400px;
+}
+.form{
+    width: 330px;
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 20px;
+    background: white;
+}
+.form input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 15px;
+}
+.radio-cursor{
+    cursor: pointer;
+}
+.radio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 20px;
+}
+.radio label{
+    width: 120px;
+    display: grid;
+    grid-template-columns: 30px auto;
+    gap: 10px;
+}
+input[type="radio"]{
+    position: relative;
     width: 20px;
     height: 20px;
-    margin-bottom: 3px;
+    appearance: none;
+    outline: none;
+}
+input[type='radio']::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid black;
+}
+input[type='radio']:checked::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+    transform: translate(-50%, -50%);
+    visibility: visible;
+}
+.interior{
+    background-attachment: fixed;
+    background-image: url('http://samartcar/public/images/static/interior.jpg');
+}
+.background1{
+    background-color: rgb(232,232,232);
+}
+.background2{
+    background-color: rgb(244,244,244);
+}
+.background{
+    background-attachment: fixed;
+    background-image: url('http://samartcar/public/images/static/background1.jpg');
+}
+.menu{
+    position: relative;
+}
+.btn-menu-open{
+
+}
+.btn-menu-close{
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 20px;
+    height: 20px;
+}
+.btn-menu-close:hover{
+    top: 16px;
+}
+.btn-menu{
+    width: 260px;
+    padding: 7px 10px;
+    border-radius: 7px;
+}
+.btn-menu:hover{
+    background-color: rgb(240,241,245);
+}
+.menu-window{
+    display: none;
+    align-content: center;
+    justify-content: center;
+    width: 300px;
+    border-radius: 20px;
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 100;
+    background: white;
+    box-shadow: 0px 0px 11px -4px rgba(34, 60, 80, 0.6);
+}
+.nav-content-block{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+    gap: 50px;
 }
 .nav-content{
     display: grid;
-    grid-template-columns: 1fr 1fr auto auto 1fr;
+    grid-template-columns: auto 1fr auto ;
     gap: 10px;
-    grid-template-areas: 'div . info instructions .';
-}
-.info{
-    display: grid;
-    grid-area: info;
-    margin-right: 150px;
-}
-.instructions{
-    display: grid;
-    grid-area: instructions;
-}
-.footer-content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 .paragraphs{
     margin-top: 20px;
@@ -84,13 +243,80 @@ a{
 li{
     color: rgb(204, 153, 102);
     font-size: 20px;
+    margin: 5px 0;
 }
 .li{
     color: rgb(77, 48, 20);
 }
-.list-level-one{
+.list_level_one{
     margin-left: 15px;
 }
-.list-level-two{
+.list_level_two{
     margin-left: 25px;
+}
+.nav-border{
+    border: 1px solid rgb(128, 128, 128,0.5);
+}
+.table_info{
+    display: grid;
+    grid-template-columns: minmax(200px,auto) minmax(200px,auto);
+}
+/* footer */
+.footer-content{
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.play_market{
+    background: rgb(244,244,244);
+}
+.play_market-content, .footer-nav-grid{
+    display: flex;
+    gap: 70px;
+}
+.play_market-main-src{
+    margin-top: 15px;
+}
+.play_market-main-src-btn{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    justify-items: center;
+    align-items: center;
+    background: black;
+    color: white;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+}
+.play_market-main-src-btn-img{
+    width: 20px;
+    height: 20px;
+}
+.play_market-qr_code-img{
+    width: 100px;
+    height: 100px;
+}
+.play_market-img{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 200px;
+    overflow: hidden;
+}
+.play_market-img-border{
+    width: 150px;
+}
+.map{
+    background: rgb(244,244,244);
+}
+.map-block{
+    width: 100%;
+    height: 400px;
+}
+.nav{
+    background: rgb(244,244,244);
+}
+.about{
+    background: rgb(232,232,232);
 }
