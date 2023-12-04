@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Device extends Model
 {
-    use HasFactory;
+    protected $fillable=['name','price','description','qty','image','category_id'];
+
+    public function category(){
+        return $this->belongsTo(Category::class);
+    }
 }

@@ -7,6 +7,16 @@
         <title>SmartHome| @yield('title','Home')</title>
         <link rel="stylesheet" href="{{asset('public/css/app.css')}}">
         <link rel="shortcut icon" href="{{asset('public/images/static/logo.png')}}" />
+        <style>
+            .interior{
+                background-attachment: fixed;
+                background-image: url({{asset('public/images/static/interior.jpg')}});
+            }
+            .background{
+                background-attachment: fixed;
+                background-image: url({{asset('public/images/static/background1.jpg')}});
+            }
+        </style>
     </head>
     <body>
         <div class="wrapper">
