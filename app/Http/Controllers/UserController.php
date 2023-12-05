@@ -30,6 +30,25 @@ class UserController extends Controller
             $this->user_email=null;
         }
     }
+
+    //1
+
+    public function index(Request $request){
+        $this->authUser();
+        $user=Auth::user();
+        $data=(object)[
+            'id'=>$this->user_id,
+            'name'=>$this->user_name,
+            'image'=>$this->user_image,
+            'email'=>$this->user_email,
+            'user'=>$user,
+            'role'=>$this->user_role,
+        ];
+        return view('user.profile')->with(['data'=>$data]);
+    }
+
+    //2
+
     public function create(Request $request){
         $this->authUser();
         $data=(object)[
@@ -57,6 +76,9 @@ class UserController extends Controller
             return redirect()->route('login')->with('success','Регистрации прошла успешно');
         }
     }
+
+    //3
+
     public function login(Request $request){
         $this->authUser();
         $data=(object)[

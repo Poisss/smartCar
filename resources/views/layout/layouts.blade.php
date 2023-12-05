@@ -58,17 +58,28 @@
                                 <div class="logo btn-menu-close">
                                     <img src="{{asset('public/images/static/close.png')}}" alt="">
                                 </div>
+                                <div class="menu-window-info">
                                     <div class="logo">
-                                        <a href=""><img src="{{asset($data->image)}}" alt=""></a>
+                                        <a href="/profile"><img src="{{asset($data->image)}}" alt=""></a>
                                     </div>
-                                <h3 class="bold">{{$data->name}}</h3>
-                                <p class="margin">{{$data->email}}</p>
+                                    <div>
+                                        <h3 class="bold">{{$data->name}}</h3>
+                                        <p>{{$data->email}}</p>
+                                    </div>
+                                </div>
+                                @if ($data->role=='admin')
+                                <a href="/admin">
+                                    <div class="btn-menu">
+                                        Админка
+                                    </div>
+                                </a>
+                                @endif
                                 <a href="/access">
                                     <div class="btn-menu">
                                         Доступ
                                     </div>
                                 </a>
-                                <a href="/settings">
+                                <a href="/profile">
                                     <div class="btn-menu">
                                         Настройки
                                     </div>

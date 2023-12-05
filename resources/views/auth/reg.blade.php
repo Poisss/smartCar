@@ -10,16 +10,12 @@
     </head>
     <body style="background: rgb(244,244,244)">
         <div class="main">
-            <div class="form">
+            <div class="form form-reg">
                 <a href="/">
                     <span style="color: rgb(0,101,177)" class="bold">Smart</span><span style="color: rgb(238,63,88)" class="bold">Home</span>
                 </a>
                 <h2>Регистрация</h2>
-                @if(session()->has('success'))
-                <div>
-                    {{session()->get('success')}}
-                </div>
-                @endif
+
                 <form action="{{route('store')}}" method="post" name="login">
                     @csrf
                     <p>Имя</p>
@@ -45,10 +41,6 @@
                             <span >Женский</span>
                         </label>
                     </div>
-                    {{-- <div class="margin main main-two">
-                        <div><input class="input-create" type="radio" name="gender" value="М" required><span>М</span></div>
-                        <div><input class="input-create" type="radio" name="gender" value="Ж" required>Ж</div>
-                    </div> --}}
                     <p>Email</p>
                     <p class="margin">
                         <input class="input-create" type="email" name="email" placeholder="Введите email" value="" required>
@@ -61,6 +53,11 @@
                     <p class="margin">
                         <input class="input-create" type="password" name="password_confirmation" placeholder="Подтвердите пароль" value="" required>
                     </p>
+                    @if(session()->has('success'))
+                        <div class="red">
+                            {{session()->get('success')}}
+                        </div>
+                    @endif
                     <p class="margin">
                         <input class="input-create" type="submit"value="Зарегистрироваться">
                     </p>

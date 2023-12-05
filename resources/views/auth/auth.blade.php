@@ -10,16 +10,12 @@
     </head>
     <body style="background: rgb(244,244,244)">
         <div class="main">
-            <div class="form">
+            <div class="form form-auth">
                 <a href="/">
                     <span style="color: rgb(0,101,177)" class="bold">Smart</span><span style="color: rgb(238,63,88)" class="bold">Home</span>
                 </a>
                 <h2>Авторизация</h2>
-                @if(session()->has('success'))
-                <div>
-                    {{session()->get('success')}}
-                </div>
-                @endif
+
                 <form action="{{route('signup')}}" method="post" name="signup">
                     @csrf
                     <div>
@@ -34,6 +30,11 @@
                     <div class="margin">
                         <input class="input-create" type="password" name="password" placeholder="Введите пароль" value="" required>
                     </div>
+                    @if(session()->has('success'))
+                        <div class="red">
+                            {{session()->get('success')}}
+                        </div>
+                    @endif
                     <div class="margin">
                         <input class="input-create" type="submit"value="Авторизация">
                     </div>
