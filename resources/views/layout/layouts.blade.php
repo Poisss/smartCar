@@ -51,7 +51,7 @@
                     @endif
                     @if ($data->role=='user'||$data->role=='admin')
                         <div class="menu">
-                            <div class="logo btn-menu-open">
+                            <div class="logo btn-menu-open pointer">
                                 <img src="{{asset($data->image)}}" alt="">
                             </div>
                             <div class="menu-window">

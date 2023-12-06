@@ -37,6 +37,9 @@ a{
     cursor: pointer;
     position: relative;
 }
+.pointer{
+    cursor: pointer;
+}
 .bold{
     font-weight: bold;
 }
@@ -87,6 +90,10 @@ a{
     height: 42px;
     overflow: hidden;
     border-radius: 50px;
+}
+.info-block{
+    display: grid;
+    grid-template-columns: 200px 1fr;
 }
 .nav-a{
     color: rgb(244,244,244);

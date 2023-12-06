@@ -15,7 +15,9 @@
                     <span style="color: rgb(0,101,177)" class="bold">Smart</span><span style="color: rgb(238,63,88)" class="bold">Home</span>
                 </a>
                 <h2>Регистрация</h2>
-
+                @foreach ($errors->all() as $message)
+                    <p>{{$message}}</p>
+                @endforeach
                 <form action="{{route('store')}}" method="post" name="login">
                     @csrf
                     <p>Имя</p>
@@ -62,6 +64,7 @@
                         <input class="input-create" type="submit"value="Зарегистрироваться">
                     </p>
                 </form>
+                {{dd($errors)}}
             </div>
             <p style="margin-top: 30px">Уже есть на Smarthome? <a href="/login" style="color: #0d4cd3">Авторизоваться</a></p>
         </div>

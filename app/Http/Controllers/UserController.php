@@ -69,7 +69,7 @@ class UserController extends Controller
             'password'=>['required','min:6','confirmed']
         ]);
         if($validator->fails()){
-            return redirect()->route('create')->with('success','Ошибка регистрации');
+            return redirect()->route('create')->withErrors($validator)->with('success','Ошибка регистрации');
         }
         else{
             User::create($validator->validated());
