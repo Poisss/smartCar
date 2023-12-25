@@ -37,6 +37,12 @@ a{
     cursor: pointer;
     position: relative;
 }
+.small-size{
+    font-size: 12px;
+}
+.big-size{
+    font-size: 5em;
+}
 .pointer{
     cursor: pointer;
 }
@@ -51,6 +57,9 @@ a{
 }
 .margin{
     margin: 10px 0;
+}
+.padding{
+    padding: 10PX;
 }
 .paragraph{
     text-indent: 20px;
@@ -103,28 +112,77 @@ a{
 }
 .main{
     display: grid;
-    align-items: center;
+    align-content: center;
     justify-items: center;
+    gap: 10vh;
     background-repeat: no-repeat;
     background-size: cover ;
+}
+.main-img{
+    max-width: 80%;
+    max-height: 80%;
 }
 .main-two{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
+.main-catalog{
+    display: grid;
+    grid-template-columns: 30vw 20vw 20vw;
+    grid-template-rows: 30vh 30vh;
+    grid-template-areas: "a b c"
+                         "a d d";
+    gap: 10px;
+    overflow: hidden;
+}
+.main-a{
+    background-color: rgb(232,232,232);
+    grid-area: a;
+}
+.main-b{
+    background-color: rgb(232,232,232);
+    grid-area: b;
+}
+.main-c{
+    background-color: rgb(232,232,232);
+    grid-area: c;
+}
+.main-d{
+    background-color: rgb(232,232,232);
+    grid-area: d;
+}
+.main-info{
+    background-size: cover ;
+    padding: 16vw 0px 7vw 9vw;
+}
 .main-block{
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 50vh;
+    height: 30vw;
     width: 30vw;
     background-color: rgba(138, 135, 135, 0.5);
 }
 .main-max{
-    height: 100vh;
+    height: calc(100vh - 100px);
 }
 .main-min{
     height: 400px;
+}
+.btn-redirect{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+    border: 1px solid white;
+    border-radius: 45px;
+    cursor: pointer;
+}
+.btn-redirect:hover{
+    background-color: white;
+    color: black;
 }
 .form{
     width: 330px;
@@ -192,15 +250,18 @@ input[type='radio']:checked::after {
     background-attachment: fixed;
     background-image: url('http://samartcar/public/images/static/interior.jpg');
 }
+.background{
+    background-attachment: fixed;
+    background-image: url('http://samartcar/public/images/static/background1.jpg');
+}
 .background1{
     background-color: rgb(232,232,232);
 }
 .background2{
     background-color: rgb(244,244,244);
 }
-.background{
-    background-attachment: fixed;
-    background-image: url('http://samartcar/public/images/static/background1.jpg');
+.background3{
+    background-image: url('http://samartcar/public/images/static/home.jpg');
 }
 .menu{
     position: relative;

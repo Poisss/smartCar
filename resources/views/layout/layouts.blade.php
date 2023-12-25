@@ -100,49 +100,6 @@
                 </div>
             </div>
             <footer>
-                <div class="play_market">
-                    <div class="border-content play_market-content">
-                        <div class="play_market-main">
-                            <div class="play_market-main-text">
-                                    <pre><h2>
-Управляй своим домом прямиком
-в новом приложении
-</h2></pre>
-                            </div>
-                            <div class="play_market-main-src">
-                                <a href="">
-                                    <div class="play_market-main-src-btn">
-                                        <div class="play_market-main-src-btn-img">
-                                            <img src="{{asset('public/images/static/google-play.png')}}" alt="google-play">
-                                        </div>
-                                        <div class="play_market-main-src-btn-text">
-                                            <p class="white">Загрузите в</p>
-                                            <p class="bold white">Google Play</p>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="play_market-img">
-                            <div class="play_market-img-border">
-                                <img src="{{asset('public/images/static/phone.png')}}" alt="phone">
-                            </div>
-
-                        </div>
-                        <div class="play_market-qr_code">
-                            <div class="play_market-qr_code-img">
-                                <img src="{{asset('public/images/static/qr_code.jfif')}}" alt="qr_code" class="qr_code">
-                            </div>
-                            <div class="play_market-qr_code-text">
-                                <pre>
-Наведите камеру
-на QR-код, чтобы
-скачать
-                                </pre>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 {{-- <script src="https://api-maps.yandex.ru/2.1/?apikey=91a91a1d-c68a-48b0-a7f6-b0670b4b5494&lang=ru_RU" type="text/javascript"></script>
                     <script type="text/javascript">
                         ymaps.ready(init);
