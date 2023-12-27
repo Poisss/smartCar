@@ -6,24 +6,24 @@
         <div class="main-img">
             <img src="{{asset('public/images/static/home_settings.png')}}" alt="">
         </div>
-        <h1 style="text-align: center">Настраивай так, как удобно тебе!</h1>
+        <h1 style="text-align: center">{{ __('Настраивай так, как удобно тебе!')}}</h1>
     </div>
     <div class="main main-max background1 padding">
         <div class="main-img">
             <img src="{{asset('public/images/static/pngwing.png')}}" alt="">
         </div>
-        <h1 style="text-align: center">Управляй домам уже сегодня</h1>
+        <h1 style="text-align: center">{{ __('Управляй домам уже сегодня')}}</h1>
     </div>
 </div>
 <div class="main main-min">
-    <h1>Знай что с твоим домом</h1>
+    <h1>{{ __('Знай что с твоим домом')}}</h1>
     <p>
 
     </p>
 </div>
 <div class="main main-max background padding">
     <h1>
-        Выбирай устройства который нужны тебе
+        {{ __('Выбирай устройства который нужны тебе')}}
     </h1>
     <div class="main-catalog">
         <a href="" class="main-a">
@@ -86,16 +86,16 @@
     <div class="main-two">
         <div class="">
             <pre class="white big-size">
-Поделитесь
+{{ __('Поделитесь
 умным домом
-с семьёй</pre>
+с семьёй')}}</pre>
             <pre class="white margin">
-Вся семья сможет управлять умными устройствами
+{{ __('Вся семья сможет управлять умными устройствами
 например включать чайник или зажигать свет.
-Даже если вы далеко.</pre>
+Даже если вы далеко.')}}</pre>
             <a href="">
                 <div class="btn-redirect white">
-                    Перейти
+                    {{ __('Перейти')}}
                 </div>
             </a>
         </div>
@@ -106,8 +106,8 @@
         <div class="play_market-main">
             <div class="play_market-main-text">
                     <pre><h2>
-Управляй своим домом прямиком
-в новом приложении
+{{ __('Управляй своим домом прямиком
+в новом приложении')}}
 </h2></pre>
             </div>
             <div class="play_market-main-src">
@@ -117,8 +117,8 @@
                             <img src="{{asset('public/images/static/google-play.png')}}" alt="google-play">
                         </div>
                         <div class="play_market-main-src-btn-text">
-                            <p class="white">Загрузите в</p>
-                            <p class="bold white">Google Play</p>
+                            <p class="white">{{ __('Загрузите в')}}</p>
+                            <p class="bold white">{{ __('Google Play')}}</p>
                         </div>
                     </div>
                 </a>
@@ -136,9 +136,9 @@
             </div>
             <div class="play_market-qr_code-text">
                 <pre>
-Наведите камеру
+{{ __('Наведите камеру
 на QR-код, чтобы
-скачать
+скачать')}}
                 </pre>
             </div>
         </div>

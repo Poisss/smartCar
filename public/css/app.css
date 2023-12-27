@@ -37,6 +37,13 @@ a{
     cursor: pointer;
     position: relative;
 }
+.required:after {
+    content: '*';
+    color: red;
+}
+.label{
+    margin-bottom: 3px;
+}
 .small-size{
     font-size: 12px;
 }
@@ -54,6 +61,9 @@ a{
 }
 .red{
     color: red;
+}
+.green{
+    color: green;
 }
 .margin{
     margin: 10px 0;
@@ -114,7 +124,7 @@ a{
     display: grid;
     align-content: center;
     justify-items: center;
-    gap: 10vh;
+    /* gap: 10vh; */
     background-repeat: no-repeat;
     background-size: cover ;
 }
@@ -196,10 +206,11 @@ a{
 .form-auth{
     margin-top: 250px;
 }
-.form input{
+.form input:not([type="radio"]){
     width: 100%;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 8px;
+    border: 1px solid black;
 }
 .radio-cursor{
     cursor: pointer;

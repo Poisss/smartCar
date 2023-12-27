@@ -33,19 +33,19 @@
                     </div>
                     <div class="nav-content-block">
                         <a href="/devices" class="nav-a">
-                            Устройства
+                            {{ __('Устройства')}}
                         </a>
                         <a href="/" class="nav-a">
-                            Справочник
+                            {{ __('Справочник')}}
                         </a>
                         <a href="/devices" class="nav-a">
-                            Мои устройства
+                            {{ __('Мои устройства')}}
                         </a>
                     </div>
                     @if ($data->role=='quest')
                         <div>
                             <div class="btn-login">
-                                <a href="/login">Войти</a>
+                                <a href="/login">{{ __('Войти')}}</a>
                             </div>
                         </div>
                     @endif
@@ -70,23 +70,23 @@
                                 @if ($data->role=='admin')
                                 <a href="/admin">
                                     <div class="btn-menu">
-                                        Админка
+                                        {{ __('Админка')}}
                                     </div>
                                 </a>
                                 @endif
                                 <a href="/access">
                                     <div class="btn-menu">
-                                        Доступ
+                                        {{ __('Доступ')}}
                                     </div>
                                 </a>
                                 <a href="/profile">
                                     <div class="btn-menu">
-                                        Настройки
+                                        {{ __('Настройки')}}
                                     </div>
                                 </a>
                                 <hr class="margin" style="width: 100%">
                                 <a href="/logout">
-                                    <p class="btn-menu">Выход</p>
+                                    <p class="btn-menu">{{ __('Выход')}}</p>
                                 </a>
                             </div>
                         </div>
@@ -124,14 +124,14 @@
                         <div class="footer-nav-grid">
                             <div>
                                 <h3 class="bold margin">
-                                    Дополнительная информация
+                                    {{ __('Дополнительная информация')}}
                                 </h3>
 
                                 <p class="margin">
-                                    <a href="/info" class="a">О проекте</a>
+                                    <a href="/info" class="a">{{ __('О проекте')}}</a>
                                 </p>
                                 <p class="margin">
-                                    <a href="/instructions" class="a">Запросы</a>
+                                    <a href="/instructions" class="a">{{ __('Запросы')}}</a>
                                 </p>
                             </div>
                             <div>
@@ -145,10 +145,10 @@
                 <div class="about">
                     <div class="border-content footer-content">
                         <div>
-                            <a href="/agreement">Пользовательское соглашение</a>
+                            <a href="/agreement">{{ __('Пользовательское соглашение')}}</a>
                         </div>
                         <div>
-                            Проектная работа &copy; 2023 МпК МГТУ им. Г.И Носова
+                            {{ __('Проектная работа ')}}&copy;{{ __(' 2023 МпК МГТУ им. Г.И Носова')}}
                         </div>
                     </div>
                 </div>

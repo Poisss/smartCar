@@ -65,7 +65,7 @@ class UserController extends Controller
             'firstname'=>['required','alpha'],
             'lastname'=>['required','alpha'],
             'patronymic'=>['nullable'],
-            'email'=>['email','unique:users'],
+            'email'=>['required','email','unique:users'],
             'password'=>['required','min:6','confirmed']
         ]);
         if($validator->fails()){
@@ -91,11 +91,20 @@ class UserController extends Controller
         return view('auth.auth')->with(['data'=>$data]);
     }
     public function signup(Request $request){
-        if(Auth::attempt($request->only(['email','password']))){
-            return redirect()->route('home')->with('success','Вы авторизованы');
+        $validator=Validator::make($request->all(),[
+            'email'=>['required','email'],
+            'password'=>['required','min:6']
+        ]);
+        if($validator->fails()){
+            return redirect()->route('login')->withErrors($validator);
         }
         else{
-            return redirect()->route('login')->with('success','Ошибка авторизации');
+           if(Auth::attempt($request->only(['email','password']))){
+                return redirect()->route('home')->with('success','Вы авторизованы');
+            }
+            else{
+                return redirect()->route('login')->with('error','Ошибка авторизации');
+            }
         }
     }
     public function logout(Request $request){
