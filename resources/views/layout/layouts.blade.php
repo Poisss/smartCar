@@ -4,17 +4,16 @@
         <meta charset="UTF-8">
         {{-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> --}}
         <meta name="viewport" content="initial-scale=1.0, user-scalable=no, maximum-scale=1" />
-        <title>SmartHome| @yield('title','Home')</title>
+        <title>SmartHome | @yield('title','Home')</title>
         <link rel="stylesheet" href="{{asset('public/css/app.css')}}">
         <link rel="shortcut icon" href="{{asset('public/images/static/logo.png')}}" />
         <style>
-            .interior{
-                background-attachment: fixed;
-                background-image: url({{asset('public/images/static/interior.jpg')}});
-            }
             .background{
                 background-attachment: fixed;
                 background-image: url({{asset('public/images/static/background1.jpg')}});
+            }
+            .background3{
+                background-image: url({{asset('public/images/static/home.jpg')}});
             }
         </style>
     </head>

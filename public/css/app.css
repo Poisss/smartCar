@@ -257,22 +257,11 @@ input[type='radio']:checked::after {
     transform: translate(-50%, -50%);
     visibility: visible;
 }
-.interior{
-    background-attachment: fixed;
-    background-image: url('http://samartcar/public/images/static/interior.jpg');
-}
-.background{
-    background-attachment: fixed;
-    background-image: url('http://samartcar/public/images/static/background1.jpg');
-}
 .background1{
     background-color: rgb(232,232,232);
 }
 .background2{
     background-color: rgb(244,244,244);
-}
-.background3{
-    background-image: url('http://samartcar/public/images/static/home.jpg');
 }
 .menu{
     position: relative;
